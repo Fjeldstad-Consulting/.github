@@ -10,3 +10,11 @@ gitleaks git --staged --redact --no-banner --ignore-gitleaks-allow || {
   echo "pre-commit: gitleaks found a possible secret, commit stopped." >&2
   exit 1
 }
+# Repository-specific checks live in pre-commit.local (mode 100755), which the rig
+# sync never touches. This file is replaced by the sync; do not edit it in place.
+if [ -x .githooks/pre-commit.local ]; then
+  exec .githooks/pre-commit.local
+elif [ -e .githooks/pre-commit.local ]; then
+  echo "pre-commit: .githooks/pre-commit.local exists but is not executable (git update-index --chmod=+x), commit stopped." >&2
+  exit 1
+fi
