@@ -1,0 +1,40 @@
+# Local config and personal values
+CLAUDE.local.md
+*.local.md
+.claude/settings.local.json
+local/
+voice-profile*.md
+voice-examples*.md
+writing-examples*.md
+# The schema is a format description, not voice material.
+!**/references/voice-profile-schema.md
+
+# Secrets and keys
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.gpg
+*.asc
+id_rsa*
+id_ed25519*
+secring*
+**/secrets/
+credentials.json
+*credentials*.json
+*.credentials
+
+# Build and OS
+node_modules/
+__pycache__/
+*.pyc
+dist/
+build/
+.DS_Store
+Thumbs.db
+desktop.ini

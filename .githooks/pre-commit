@@ -1,0 +1,12 @@
+#!/bin/sh
+# Blocks the commit if gitleaks finds a secret in staged changes.
+# Inline "gitleaks:allow" comments are ignored; false positives are handled
+# through .gitleaks.toml on the default branch (docs/hierarchy.md, Break glass).
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo "pre-commit: gitleaks not found on PATH, commit stopped." >&2
+  exit 1
+fi
+gitleaks git --staged --redact --no-banner --ignore-gitleaks-allow || {
+  echo "pre-commit: gitleaks found a possible secret, commit stopped." >&2
+  exit 1
+}
