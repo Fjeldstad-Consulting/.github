@@ -11,3 +11,4 @@ The organisation's community health files. GitHub shows them as defaults in ever
 - A change here changes every repository that relies on the default. Say so in the pull request.
 - The issue template is a copy of `.github/ISSUE_TEMPLATE/task.md` in fc-rig. Change it there first, then here.
 - No client data, business figures or local values, as in fc-rig `docs/classification.md`.
+- This repository is public. Nothing from the private rig beyond the scan files is copied here; read the rig's rules in fc-rig itself.
