@@ -2,6 +2,9 @@ name: Task
 description: One outcome to deliver, understandable without any prior conversation (docs/issue-guidelines.md in fc-rig)
 type: Task
 body:
+  - type: markdown
+    attributes:
+      value: Do not paste secrets, tokens or personal data. Report a vulnerability as SECURITY.md says, not in an issue.
   - type: textarea
     id: background
     attributes:

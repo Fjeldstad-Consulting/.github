@@ -2,6 +2,9 @@ name: Bug
 description: Something does not work as intended (docs/issue-guidelines.md in fc-rig)
 type: Bug
 body:
+  - type: markdown
+    attributes:
+      value: Do not paste secrets, tokens or personal data. Report a vulnerability as SECURITY.md says, not in an issue.
   - type: textarea
     id: background
     attributes:
