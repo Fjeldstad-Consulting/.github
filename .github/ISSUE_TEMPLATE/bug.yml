@@ -1,0 +1,47 @@
+name: Bug
+description: Something does not work as intended (docs/issue-guidelines.md in fc-rig)
+type: Bug
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: Background
+      description: What happens, what should happen instead, and why it matters. Link files, branches and pull requests. No references to chats or local files.
+    validations:
+      required: true
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current state
+      description: How to reproduce it, with the date, the version and the exact steps or command, and what they showed.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What the fix covers, and what is deliberately not covered.
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints and risks
+      description: What must not break, and what could go wrong with the fix.
+    validations:
+      required: true
+  - type: textarea
+    id: done-when
+    attributes:
+      label: Done when
+      description: Verifiable results, including that the steps above no longer reproduce the fault.
+      value: "- [ ] "
+    validations:
+      required: true
+  - type: textarea
+    id: verify
+    attributes:
+      label: How to verify
+      description: Concrete steps or commands that prove each item in Done when.
+    validations:
+      required: true

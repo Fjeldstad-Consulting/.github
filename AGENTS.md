@@ -4,11 +4,11 @@ The rules of the shared rig, Fjeldstad-Consulting/fc-rig, apply first in this re
 
 ## What this repository is
 
-The organisation's community health files. GitHub shows them as defaults in every Fjeldstad Consulting repository that has no file of its own: the security policy, the support note and the issue templates. `profile/README.md` is shown on the organisation page.
+The organisation's community health files. GitHub shows them as defaults in every Fjeldstad Consulting repository that has no file of its own: the security policy, the support note, the issue forms and the pull request template. `profile/README.md` is shown on the organisation page.
 
 ## Rules for this repository
 
 - A change here changes every repository that relies on the default. Say so in the pull request.
-- The issue template is a copy of `.github/ISSUE_TEMPLATE/task.md` in fc-rig. Change it there first, then here.
+- The issue forms in `.github/ISSUE_TEMPLATE/` and `.github/pull_request_template.md` are copies of the same files in fc-rig. Change them there first, then here.
 - No client data, business figures or local values, as in fc-rig `docs/classification.md`.
 - This repository is public. Nothing from the private rig beyond the scan files is copied here; read the rig's rules in fc-rig itself.
