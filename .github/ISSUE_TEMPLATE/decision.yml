@@ -1,0 +1,57 @@
+name: Decision
+description: A question the owner decides before work continues (docs/issue-guidelines.md in fc-rig, section Decisions)
+type: Decision
+body:
+  - type: markdown
+    attributes:
+      value: Do not paste secrets, tokens or personal data. Report a vulnerability through the repository's Security tab, as its security policy says, not in an issue.
+  - type: textarea
+    id: decision-needed
+    attributes:
+      label: Decision needed
+      description: The question in one sentence; the numbered options, each with what it means in practice, one concrete example, the cost or risk and a one-line recommendation; and how to answer.
+    validations:
+      required: true
+  - type: textarea
+    id: background
+    attributes:
+      label: Background
+      description: What the situation is and why it matters. Link files, branches and pull requests. No references to chats or local files.
+    validations:
+      required: true
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current state
+      description: Facts, with the date and how they were checked, so the check can be repeated.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is covered, and what is deliberately not covered.
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints and risks
+      description: What must not break or be done, and what could go wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: done-when
+    attributes:
+      label: Done when
+      description: Verifiable results, not activities.
+      value: "- [ ] "
+    validations:
+      required: true
+  - type: textarea
+    id: verify
+    attributes:
+      label: How to verify
+      description: Concrete steps or commands that prove each item in Done when.
+    validations:
+      required: true
