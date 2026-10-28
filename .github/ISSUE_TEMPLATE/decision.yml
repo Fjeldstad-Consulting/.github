@@ -4,7 +4,7 @@ type: Decision
 body:
   - type: markdown
     attributes:
-      value: Do not paste secrets, tokens or personal data. Report a vulnerability as SECURITY.md says, not in an issue.
+      value: Do not paste secrets, tokens or personal data. Report a vulnerability through the repository's Security tab, as its security policy says, not in an issue.
   - type: textarea
     id: decision-needed
     attributes:
