@@ -4,8 +4,8 @@ Default community health files for the Fjeldstad-Consulting organisation. GitHub
 
 - `SECURITY.md`: how to report a vulnerability
 - `SUPPORT.md`: where to ask for help
-- `.github/ISSUE_TEMPLATE/`: the Task, Bug and Decision issue forms from fc-rig, and no blank issues
-- `.github/pull_request_template.md`: the pull request template from fc-rig
+- `.github/ISSUE_TEMPLATE/`: the Task, Bug and Decision issue forms, and no blank issues; this is their only source
+- `.github/pull_request_template.md`: the pull request template; this is its only source
 - `profile/README.md`: shown on the organisation page
 
 A repository that needs a different file adds its own copy; the default then no longer applies there. The secret-scan workflow and the pre-commit hook are copies from fc-rig `main`, as in every repository; install the hook once per clone as fc-rig describes.

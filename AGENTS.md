@@ -9,6 +9,6 @@ The organisation's community health files. GitHub shows them as defaults in ever
 ## Rules for this repository
 
 - A change here changes every repository that relies on the default. Say so in the pull request.
-- The issue forms in `.github/ISSUE_TEMPLATE/` and `.github/pull_request_template.md` are copies of the same files in fc-rig. Change them there first, then here.
+- The issue forms in `.github/ISSUE_TEMPLATE/` and `.github/pull_request_template.md` exist only here; fc-rig and every other repository use them as organisation defaults. Change them here, following fc-rig `docs/issue-guidelines.md`.
 - No client data, business figures or local values, as in fc-rig `docs/classification.md`.
-- This repository is public. Nothing from the private rig beyond the scan files, the issue forms and the pull request template is copied here; read the rig's rules in fc-rig itself.
+- This repository is public. Nothing from the private rig beyond the scan files is copied here; read the rig's rules in fc-rig itself.
