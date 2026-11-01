@@ -34,6 +34,48 @@ body:
     validations:
       required: true
   - type: textarea
+    id: depends-on
+    attributes:
+      label: Depends on
+      description: 'Issues that must be closed before this work can start, as links, or "Not relevant: <reason>".'
+    validations:
+      required: true
+  - type: textarea
+    id: needs
+    attributes:
+      label: Needs
+      description: 'What the session needs from the owner (a decision, an account step, a setting), or "Not relevant: <reason>".'
+    validations:
+      required: true
+  - type: textarea
+    id: guards-touched
+    attributes:
+      label: Guards touched
+      description: 'Scan, hook or boundary files the work will change, or "None". Changing a scan file (the list is in fc-rig docs/hierarchy.md, Break glass) means the pull request carries a "Secret scan change:" line and the owner merges it.'
+    validations:
+      required: true
+  - type: textarea
+    id: ready
+    attributes:
+      label: Ready for a cloud session
+      description: '"Yes" when every Done when command has been run once, no Decision needed block is open, every Depends on issue is closed and every file the work needs is in a repository; otherwise "No" and what is missing.'
+    validations:
+      required: true
+  - type: textarea
+    id: review-bar
+    attributes:
+      label: Review bar
+      description: '"Honest errors" (the default) or "hostile input", so reviewers know when to stop.'
+    validations:
+      required: true
+  - type: textarea
+    id: runtime-needs
+    attributes:
+      label: Runtime needs
+      description: 'Tools, network hosts and access the work needs, for example a browser, npm or a token scope, so a session can tell before it starts whether it can finish. "None" when a plain checkout is enough.'
+    validations:
+      required: true
+  - type: textarea
     id: done-when
     attributes:
       label: Done when
