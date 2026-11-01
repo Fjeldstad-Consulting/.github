@@ -51,7 +51,7 @@ body:
     id: guards-touched
     attributes:
       label: Guards touched
-      description: 'Scan, hook or boundary files the work will change. Touching one means the pull request carries a "Secret scan change:" line and the owner merges it. Otherwise "None".'
+      description: 'Scan, hook or boundary files the work will change, or "None". Changing a scan file (the list is in fc-rig docs/hierarchy.md, Break glass) means the pull request carries a "Secret scan change:" line and the owner merges it.'
     validations:
       required: true
   - type: textarea
