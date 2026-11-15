@@ -1,5 +1,14 @@
 # Fjeldstad Consulting
 
-Advisory on change, internal control and digital work for Norwegian small and medium-sized businesses.
+Advisory for Norwegian small and medium-sized businesses. You bring the problem. The work goes through four steps to find out what should be done, and to do it:
 
-How the work is done is written down once, in the shared rig `fc-rig`, and applies in every repository here. Each repository's `AGENTS.md` opens with that precedence and adds only what is specific to it. New repositories start from `fc-repo-template`. Coordination happens in issues, never in chat.
+1. **Understand.** Talk to the people who do the job and read the routines, agreements and figures, until symptom is separated from cause.
+2. **Assess.** Test the assumptions against what can be documented, before anyone spends money.
+3. **Develop.** Build the solution with the people who will use it, with the control built in from the start.
+4. **Carry through.** Follow the change until it is in use, within what was agreed, and document what was done and why.
+
+Website: <https://fjeldstadconsulting.ai>
+
+Get in touch: <https://fjeldstadconsulting.ai/#kontakt>
+
+Most repositories here are private. To report a security problem, see the [security policy](https://github.com/Fjeldstad-Consulting/.github/blob/main/SECURITY.md).
